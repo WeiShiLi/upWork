@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>regist</title>
+    <style type="text/css">
+
+        body {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav{
+            display: block;
+            min-width: 400px;
+            /*min-width: 600px;*/
+            /*width: 100%;*/
+        }
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            /*margin-bottom: 20px;*/
+            border: 1px solid transparent;
+        }
+
+        .navbar-default {
+            /*background-color: #f8f8f8;
+            border-color: #e7e7e7;*/
+            background-color: #fff;
+            border-color: #e8e8e8;
+        }
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 8px;
+            padding-bottom: 7px;
+        }
+        .nav-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .regist_nav_text1{
+            padding-top: 20px;
+            letter-spacing: 1px;
+        }
+        .regist_nav_text{
+          padding-top: 20px;
+            display: none;
+            letter-spacing: 1px;
+        }
+        .regist_nav_text1 a,.regist_nav_text a{
+            text-decoration: none;
+            color:#37A05F;
+        }
+        .regist_nav_text1 a:hover,.regist_nav_text a:hover{
+            text-decoration: underline;
+        }
+        .footer{
+            display: block;
+            background-color: #494949;
+            clear: both;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .text-align{
+            text-align: center;
+        }
+        .copyright{
+            margin-bottom: 0px;
+            color: #E0E0E0;
+            font-size: 15px;
+            /*line-height: 20px;*/
+            /*word-break: break-word;*/
+            word-break: break-all;
+        }
+        .col a{
+            text-decoration: none;
+            color: #7D7D7D;
+            font-size: 15px;
+        }
+        .col a:hover{
+            text-decoration: underline;
+        }
+
+
+
+
+        /*主内容区css*/
+
+
+        .regist-container{
+            width: 100%;
+            /*height: 650px;*/
+            background-color: #F9F9F9;
+            padding-bottom: 120px;
+        }
+        .regist-container>div {
+            width: 80%;
+            /*background-color: red;*/
+            margin: auto;
+        }
+        .regist-container>div .up{
+            text-align: center;
+            padding: 80px 0px;
+        }
+        .regist-container>div .up span{
+            color: #5F5F80;
+            font-size: 25px;
+
+            /*font-weight: lighter;*/
+        }
+        .regist-container>div .down{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .regist-container>div .down .left{
+            width: 45%;
+            /*height: 335px;*/
+            text-align: center;
+            /*padding-left: 20px;*/
+        }
+        .regist-container>div .down .right{
+            width: 45%;
+            /*height: 335px;*/
+            text-align: center;
+            /*padding-right: 20px;*/
+        }
+        .regist-container>div .down .left div,.regist-container>div .down .right div{
+            margin-top: 30px;
+        }
+        .hire{
+            letter-spacing: 1px;
+            font-size: 25px;
+            color: #5F5F80;
+            word-spacing: 2px;
+        }
+        .btn .btn-css{
+            width: 112px;
+            height: 43px;
+            background-color: #37A000;
+            box-sizing: border-box;
+            border-radius: 3px;
+            line-height: 43px;
+            color: white;
+            font-size: 1.1em;
+            margin: auto;
+        }
+        .btn-css:hover{
+            background-color: #008329;
+        }
+        .iconn{
+            width: 10%;
+            text-align: center;
+        }
+        .iconn1{
+            height: 110px;
+            border-left: solid 1px gray;
+            width: 0px;
+            margin-left: 45px;
+
+        }
+        .iconn2{
+            font-size: 25px;
+            color: gray;
+            margin-top: 20px ;
+        }
+        .iconn3{
+            height:110px;
+            border-left: solid 1px gray;
+            width: 0px;
+            margin-left: 45px;
+            margin-top: 20px;
+
+        }
+
+        @media (min-width: 1200px) {
+            .container{
+                width: 1000px;
+            }
+        }
+        @media (max-width:1199px) {
+            .container{
+                width: 770px;
+            }
+        }
+        @media (max-width: 992px) {
+            .regist_nav_text{
+                display: block;
+            }
+            .regist_nav_text1{
+                display: none;
+            }
+            .regist-container>div .down .left{
+                width: 100% ;
+                /*background-color: pink;*/
+            }
+            .regist-container>div .down  .right{
+                width: 100% ;
+                /*background-color: pink;*/
+            }
+            .iconn{
+                width: 100%;
+                justify-content: center;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding-right: 30px;
+            }
+            .iconn  .iconn1{
+                width: 25%;
+                border-top: solid 1px gray ;
+                height: 0px;
+                margin-right: 5px;
+                margin-top: 35px ;
+            }
+            .iconn  .iconn2{
+                font-size: 25px;
+                color: gray;
+                margin-top: 20px ;
+            }
+            .iconn  .iconn3{
+                width: 25%;
+                border-top: solid 1px gray;
+                height: 0px;
+                margin-left: 5px;
+                margin-top: 35px;
+            }
+        }
+        @media (max-width: 768px) {
+            .container{
+                width: 650px;
+            }
+            .regist_nav_text{
+                display: block;
+            }
+            .regist_nav_text1{
+                display: none;
+            }
+        }
+        @media (max-width: 650px) {
+            .container{
+                width:100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="nav-content">
+            <a href="home.html" class="navbar-brand" >
+                <img src="imgs/upwork-logo.png" height="50" />
+            </a>
+            <span class="regist_nav_text1">Already have an account?<a href="login.html"> Log In</a></span>
+            <span  class="regist_nav_text"><a href="login.html"> Log In</a></span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="regist-container">
+    <div class="type" >
+        <div class="up">
+            <div>
+                <span>Let's get started!<br>
+                First, tell us what you're looking for.</span>
+                <!--<p>Let's get started!</p>-->
+                <!--<p> First, tell us what you're looking for.</p>-->
+            </div>
+        </div><!--内容区上半部分div结束-->
+        <div class="down">
+            <div class="left">
+                <div class="icon"><img src="imgs/hire.png" /></div>
+                <div class="hire"> I want to hire a freelancer</div>
+                <div class="h">Find, collaborate with,<br>
+                    and pay an expert. </div>
+                <div class="btn">
+                    <div class="btn-css">Hire</div>
+                </div>
+            </div><!--内容区的左半部分结束-->
+            <div class="iconn" >
+
+                <div class="iconn1" ></div>
+                <div class="iconn2" >OR</div>
+                <div class="iconn3" ></div>
+            </div><!--内容区中间结束-->
+            <div class="right">
+                <div class="icon"><img src="imgs/work.png" /></div>
+                <div class="hire">I'm looking for online work</div>
+                <div class="h">Find freelance projects and <br>
+                    grow your business. </div>
+                <div class="btn">
+                    <a href="work_regist.html"><div class="btn-css">Work</div></a>
+                </div>
+            </div><!--内容区右半部分结束-->
+        </div><!--内容区下半部分div结束-->
+    </div>
+</div>
+<!--内容区div结束-->
+
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col text-align">
+                <p class="copyright">© 2015 - 2017 Upwork Global Inc.</p>
+                <a href="#">Terms of Service </a>
+                <br>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

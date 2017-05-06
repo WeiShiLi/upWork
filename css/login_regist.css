@@ -1,0 +1,353 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: #37A05F;
+}
+input,button{
+    outline-color: green;
+}
+#nameEmpty span{
+    color: red;
+    font-size: 0.9em;
+    margin-left: 8px;
+}
+input[type='text'],button[type='submit'],input[type="password"]{
+    width: 440px;
+    height: 40px;
+}
+input[type='text'],input[type="password"]{
+    border: solid 2px #E0E0E0;
+}
+body{
+    font:normal 100% sans-serif;
+}
+.head{
+    height: 70px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.head .head_logo{
+    width: 60%;
+    margin: auto;
+}
+.head .head_logo img{
+    height: 50px;
+    padding-top: 10px;
+}
+.container{
+    width: 100%;
+    height: 582px;
+    background-color: #F9F9F9;
+
+}
+.container .container-login{
+    width: 30%;
+    margin: auto;
+    height: 582px;
+    box-sizing: border-box;
+}
+.container .container-login .login-up{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 70px;
+    box-sizing: border-box;
+    color: #494949;
+    letter-spacing: 1px;
+}
+.container .container-login .login-down{
+    /*height:400px;*/
+    width: 100%;
+    /*background-color: red;*/
+}
+
+.login-down .one, .two{
+    text-align: center;
+}
+
+.two{
+    margin-top: 35px;
+    }
+#nameEmpty ,#passEmpty{
+    display: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: red;
+}
+.three{
+    width: 92%;
+    margin: auto;
+    margin-top: 20px;
+}
+.three .three-left{
+    float: left;
+
+}
+.three .three-left #check {
+    width: 20px;
+    height: 20px;
+}
+
+.three .three-left>label{
+    color: #494E59;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    padding-left: 15px;
+}
+
+.three .three-right{
+    float: right;
+}
+.three .three-right{
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.three .three-right a:hover{
+    text-decoration: underline;
+}
+
+
+.four{
+    text-align: center  ;
+    margin-top: 80px;
+}
+.four button[type='submit']{
+    background-color: #37A000;
+    border: none;
+    color: white;
+    font-size: 1em;
+}
+.four button[type='submit']:hover{
+    background-color: #008329;
+}
+.five{
+    width: 92%;
+    margin: auto;
+    margin-top: 23px;
+}
+.five .five-left{
+    float: left;
+    color: #494E59;
+    padding-top: 7px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+.five .five-right{
+    float: left;
+    margin-left: 25px;
+}
+.five .five-right a{
+    display: inline-block;
+    padding: 8px 20px;
+    border: solid 2px #E0E0E0;
+    font-size: 0.8em;
+}
+.five .five-right a:hover{
+    border-color: #008329;
+}
+
+.foot{
+    width: 100%;
+    height: 118px;
+    background-color: #494949;
+}
+.foot .foot-css{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.foot .foot-css p{
+    color: #E0E0E0;
+    font-size: 0.9em;
+}
+.foot .foot-css a{
+    text-decoration: none;
+    color: #7D7D7D;
+    font-size: 0.9em;
+}
+.foot .foot-css a:hover{
+    text-decoration: underline;
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+    border-bottom: solid 1px #E0E0E0;
+}
+.header .header-container{
+    display: flex;
+    flex-direction:row;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    /*background-color: red;*/
+
+}
+.header .header-container div{
+    flex: 1;
+    width: 33%;
+    /*min-width: 200px ;*/
+    /*background-color: red;*/
+}
+.header .header-container .logo img{
+    height: 50px;
+    padding-top: 10px;
+}
+.header .header-container .login{
+    text-align: right;
+    padding-top: 25px;
+    font-size: 0.9em;
+    padding-right: 20px;
+}
+.header .header-container .login span, .h{
+    color: #5F5F80;
+}
+.regist-container{
+    width: 100%;
+    height: 650px;
+    background-color: #F9F9F9;
+}
+.regist-container>div {
+    width: 80%;
+    /*background-color: red;*/
+    margin: auto;
+}
+.regist-container>div .up{
+    text-align: center;
+    padding: 80px 0px;
+}
+.regist-container>div .up span{
+    color: #5F5F80;
+    font-size: 1.7em;
+    /*font-weight: lighter;*/
+}
+.regist-container>div .down{
+    display: flex;
+    flex-direction: row;
+}
+.regist-container>div .down .left{
+    width: 45%;
+    /*height: 335px;*/
+    text-align: center;
+    padding-left: 20px;
+}
+.regist-container>div .down .right{
+    width: 45%;
+    /*height: 335px;*/
+    text-align: center;
+    padding-right: 20px;
+}
+.regist-container>div .down .left div,.regist-container>div .down .right div{
+    margin-top: 30px;
+}
+.hire{
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    color: #5F5F80;
+    word-spacing: 2px;
+}
+.btn .btn-css{
+    width: 112px;
+    height: 43px;
+    background-color: #37A000;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 43px;
+    color: white;
+    font-size: 1.1em;
+    margin: auto;
+}
+.btn-css:hover{
+    background-color: #008329;
+}
+
+
+.work-up{
+    text-align: center;
+}
+.work{
+   width: 30%;
+    height: 910px;
+    /*background-color: #1A8EC6;*/
+    margin: auto;
+}
+.work-up .work-a{
+    font-size: 1.8em;
+    padding-bottom: 10px;
+    padding-top: 45px;
+    color: #5F5F5F;
+}
+.work-up .work-b{
+    font-size: 0.9em;
+    word-spacing: 1px;
+    padding-bottom: 45px;
+}
+.work-form{
+    width: 100%;
+    height: 470px;
+}
+.part1,.part2,.part3,.part4,.part5,.part6,.part7{
+    width: 100%;
+    border-top:solid 1px #E0E0E0;
+    /*padding: -1px 1px 0px 1px;*/
+    border-bottom: 0px;
+    border-left:solid  2px #E0E0E0;
+    border-right:solid  2px #E0E0E0;
+    box-sizing: border-box;
+}
+.part7{
+    border-bottom: solid  1px #E0E0E0;
+}
+.work-form #work-reg input{
+   width: 100%;
+    height: 45px;
+    border: none;
+}
+.part8,.part9{
+    margin-top: 20px;
+    width: 100%;
+    height: 55px;
+    background-color: red;
+}
+
+
+
+
+
+
+.part8:hover,.part9:hover{
+    background-color: #EFEFEF;
+}
+.part10{
+    margin-top: 50px;
+}
+/*.part10 .btn .btn-css{*/
+    /*text-align: center;*/
+    /*width: 170px;*/
+    /*height: 43px;*/
+
+/*}*/
+
+.part10 .reg-sub button[type=submit]{
+    width: 400px;
+    width: 43px;
+    /*background-color: red;*/
+}
+
+
+
+
+
+
+
+
+
+

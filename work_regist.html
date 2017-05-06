@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work-regist</title>
+    <link rel="stylesheet" href="css/work-regist.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-container">
+        <div class="logo"><a href="home.html"><img src="imgs/upwork-logo.png" /></a></div>
+        <div class="null"></div>
+        <div class="login"><span>Already have an account?</span><a href="login.html"> Log In</a></div>
+    </div>
+</div>
+<!--头部div结束-->
+
+<div style="width: 100%;height: 910px;background-color: #F9F9F9">
+
+    <div class="work">
+
+        <div class="work-up">
+            <p class="work-a"> Create a Free Freelancer Account</p>
+
+           <p class="work-b">Looking to hire? <a href="#">Sign up as a client</a></p>
+        </div><!--中间区上方文字-->
+         <div class="work-form">
+             <form action="home.html" method="post" name="regist-form" id="work-reg" onsubmit="return checkSumbit()">
+                 <div class="part1">
+                     <input type="text" name="Fname" id="FN" placeholder="   First Name">
+                     <div id="part-a">not empty</div>
+                 </div>
+                 <div class="part2">
+                     <input type="text" name="Lname" id="LN" placeholder="   Last Name">
+                     <div id="part-b">not empty</div>
+                 </div>
+                 <div class="part3">
+                     <input type="text" name="Email" id="email" placeholder="   Email">
+                     <div id="part-c">not empty</div>
+                 </div>
+
+                 <div class="part4" id="part4">
+                     <table style="width: 100% ;background-color: white">
+                         <tr style="width: 100%">
+                             <td style="width: 95%"><input type="text" id="city"  placeholder="   Select Country"></td>
+                             <td><img src="imgs/direction.png" alt=""></td>
+                         </tr>
+                     </table>
+                 </div>
+
+                 <div class="part7-select" id="p4-s" >
+                     <div class="select" id="china">China</div>
+                     <div class="select"  id="usa">usa</div>
+                     <div  class="select" id="japan">JAPAN</div>
+                 </div>
+
+
+
+
+                 <div class="part5">
+                     <input type="text" name="Uname" id="username" placeholder="   Username">
+                     <div id="part-d">not empty</div>
+                 </div>
+                 <div class="part6">
+                     <input type="password" name="Upass" id="userpass" placeholder="   Password">
+                     <div id="part-e">not empty</div>
+                 </div>
+
+
+                 <div class="part7" id="p7">
+                     <table style="width: 100% ;background-color: white; border-collapse: collapse">
+                         <tr>
+                             <td style="width: 95%"> <input type="text" id="part7-value" placeholder="   How did  you hear about Upwork?"></td>
+                             <td><img src="imgs/direction.png" alt=""></td>
+                         </tr>
+                     </table>
+
+
+                 </div>
+
+                 <div class="part7-select" id="p7-s">
+                     <div class="select" id="blog">blog</div>
+                     <div class="select"  id="friend">friend</div>
+                     <div  class="select" id="event">event</div>
+                 </div>
+
+
+                 <div class="part8">
+                     <input type="checkbox">
+
+                    <span style="word-spacing: 3px">Yes! Send me genuinely useful emails every now and then to help me get the most out of Upwork.</span>
+                 </div>
+
+                 <div class="part9">
+                     <input type="checkbox" class="chk">
+                     <span style="word-spacing: 3px">
+                     Yes, I understand and agree to the Upwork Terms of Service, including the User Agreement and Privacy Policy.
+                     </span>
+
+                 </div>
+
+
+
+                 <div class="part10">
+
+                     <div class="reg-sub">
+                         <button type="submit">Get Started</button>
+                     </div>
+                 </div>
+
+             </form>
+
+         </div>
+        <!--注册区form-->
+
+    </div>
+
+</div><!--中间区div-->
+
+
+<footer class="foot">
+    <div class="foot-css">
+        <p>© 2015 - 2017 Upwork Global Inc.</p>
+        <a href="">Terms of Service</a><br>
+        <a href="">Cookie Policy</a>
+    </div>
+
+</footer>
+
+
+<script src="js/work-regist.js"></script>
+
+</body>
+</html>

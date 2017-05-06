@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="js/login-regist.js"></script>
+    <title>Title</title>
+    <style type="text/css">
+
+        body {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            display: block;
+            min-width: 400px;
+            /*min-width: 600px;*/
+            /*width: 100%;*/
+        }
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            /*margin-bottom: 20px;*/
+            border: 1px solid transparent;
+        }
+
+        .navbar-default {
+            /*background-color: #f8f8f8;
+            border-color: #e7e7e7;*/
+            background-color: #fff;
+            border-color: #e8e8e8;
+        }
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 8px;
+            padding-bottom: 7px;
+        }
+        .navbar-brand{
+
+        }
+
+
+        h1.log_l{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+            font-weight: 200;
+            letter-spacing: 2px;
+            color: rgba(96, 96, 101, 0.78);
+            display: block;
+        }
+        h1.log_s{
+            /*padding-top: 0px;*/
+            /*padding-bottom: 30px;*/
+            margin-top: -30px;
+            text-align: left;
+            display: none;
+            font-weight: 200;
+            letter-spacing: 2px;
+            color: rgba(96, 96, 101, 0.78);
+            /*background-color: red;*/
+        }
+        @media (min-width: 1200px){
+            .navbar {
+                border-radius: 4px;
+            }
+            .container {
+                width: 1000px;
+                /*background-color: palegreen;*/
+            }
+        }
+
+        @media (max-width: 1200px){
+            .col-6{
+                width:60% !important;
+                /*background-color: red;*/
+            }
+        }
+        @media (max-width: 990px){
+            .container {
+                width:700px;
+                padding-left: 20px;
+                padding-right: 20px;
+                /*background-color: blue;*/
+            }
+            .col-6{
+                width:90% !important;
+                /*background-color: red;*/
+            }
+
+        }
+        @media (min-width: 500px) and (max-width: 700px) {
+            .container {
+                width: 500px;
+                padding-left: 20px;
+                padding-right: 20px;
+                /*background-color: red;*/
+            }
+
+            .col-6 {
+                width: 90% !important;
+                /*background-color: green;*/
+            }
+
+            h1.log_l {
+                display: none ;
+            }
+            h1.log_s{
+                display: block !important;
+            }
+        }
+            @media(max-width: 500px){
+                .container{
+                    width: 400px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    /*background-color: blueviolet;*/
+                }
+                h1.log_s{
+                    display: block !important;
+                }
+                h1.log_l {
+                    display: none;
+                }
+
+        }
+
+        .footer{
+            display: block;
+            background-color: #494949;
+            clear: both;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .text-align{
+            text-align: center;
+        }
+        .copyright{
+            margin-bottom: 0px;
+            color: #E0E0E0;
+            font-size: 17px;
+            /*line-height: 20px;*/
+            /*word-break: break-word;*/
+            word-break: break-all;
+        }
+        .col a{
+            text-decoration: none;
+            color: #7D7D7D;
+            font-size: 16px;
+        }
+        .col a:hover{
+            text-decoration: underline;
+        }
+        .content{
+            background-color: #F9F9F9;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .col-6{
+            width:30%;
+            /*height: 500px;*/
+            margin: auto;
+            /*background-color: red;*/
+        }
+        h1.log_l{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+            font-weight: 200;
+            letter-spacing: 2px;
+            color: rgba(96, 96, 101, 0.78);
+        }
+        h1.log_s{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: left;
+            display: none;
+        }
+        input[type='text'],button[type='submit'],input[type="password"]{
+            width: 100%;
+            height: 42px;
+        }
+        input[type='text'],input[type="password"]{
+            border: solid 2px #E0E0E0;
+        }
+        input,button{
+            outline: none;
+        }
+        input[type='text']:hover,input[type="password"]:hover{
+            border-color: green;
+        }
+        .one, .two{
+            text-align: center;
+        }
+        .two{
+            margin-top:40px;
+        }
+        #nameEmpty ,#passEmpty{
+            display: none;
+            padding-left: 15px;
+            padding-top: 10px;
+            color: red;
+        }
+        .three{
+             display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+             margin: auto;
+             /*margin-top: 20px;*/
+         }
+        .three-left{
+            padding-top: 20px;
+            display: flex;
+            min-width: 100px;
+        }
+        .three-right{
+            min-width: 100px;
+            padding-top: 20px;
+        }
+        .three .three-left #check {
+            width: 20px;
+            height: 20px;
+        }
+
+        .three .three-left>label{
+            color: #494E59;
+            letter-spacing: 1px;
+            padding-left: 10px;
+        }
+        .three .three-right a{
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: green;
+        }
+        .three .three-right a:hover{
+            text-decoration: underline;
+        }
+        .four{
+            /*text-align: center  ;*/
+            margin-top: 45px;
+        }
+        .four button[type='submit']{
+            background-color: #37A000;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        .four button[type='submit']:hover{
+            background-color: #008329;
+        }
+        .five{
+            margin-top: 23px;
+            margin-bottom:67px;
+            display: flex;
+            flex-direction: row;
+        }
+        .five .five-left{
+            color: #494E59;
+            padding-top: 7px;
+            /*font-size: 0.8em;*/
+            letter-spacing: 1px;
+        }
+        .five .five-right{
+            margin-left: 25px;
+        }
+        .five .five-right a{
+            display: inline-block;
+            height: 34px;
+            width: 87px;
+            text-align: center;
+            border: solid 2px #E0E0E0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .five .five-right a{
+            text-decoration: none;
+            color: green;
+        }
+        .five .five-right a:hover{
+            border-color: #008329;
+        }
+
+        .log{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="log">
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <a href="home.html" class="navbar-brand" >
+            <img src="imgs/upwork-logo.png" height="50" />
+        </a>
+    </div>
+</nav>
+
+
+<div class="content" >
+
+    <!--<div class="container" style="padding-top: 40px;padding-bottom: 40px;height: auto;background-color: red">-->
+        <div class="col-6">
+
+            <h1 class="log_l">Log in and get to work</h1>
+            <h1 class="log_s" >Log in</h1>
+
+            <form action="home.html" method="post" name="login-form" id="login-form-css" onsubmit="return checkFalse()" >
+
+                <div class="one">
+                    <input type="text" name="user_name" id="name" placeholder="   Username or Email" >
+                    <!--required="required"-->
+                </div>
+
+                <div id="nameEmpty" ><img src="imgs/warn.png" /><span id="warn">Username or Email is not empty</span></div>
+
+                <div class="two">
+                    <input type="password" name="user-password" id="pass" placeholder="   password">
+                </div>
+
+                <div id="passEmpty" ><img src="imgs/warn.png"/><span>password is not empty</span></div>
+
+                <div class="three">
+                    <!--//使用style="display: flex"使复选框与 label水平居中-->
+                    <div class="three-left">
+                        <input type="checkbox" id="check"><label for="check">Remember me</label>
+                    </div>
+                    <div class="three-right">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+
+                <div class="four">
+                    <button type="submit" id="login">Log In</button>
+                </div>
+
+                <div class="five">
+                    <div class="five-left">Don't have an account? </div>
+                    <div class="five-right">
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+
+            </form>
+
+        <!--</div>-->
+    </div>
+
+
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col text-align">
+                <p class="copyright">© 2015 - 2017 Upwork Global Inc.</p>
+                <a href="#">Terms of Service </a>
+                <br>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+<script src="js/login-regist.js"></script>
+</body>
+</html>
